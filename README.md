@@ -1,52 +1,98 @@
-# Text-To_Speech_Application
+# Text-To-Speech Application
 
-This project offers a user-friendly Text-to-Speech application built with Python. 
+A Python-based **Text-To-Speech (TTS) Application** that utilizes the `pyttsx3` library for speech synthesis and `tkinter` for a user-friendly graphical user interface (GUI). This project allows users to convert text into speech with customization options such as **voice gender selection**, **adjustable speech speed**, and **saving audio as an MP3 file**.
 
-**Features:**
+## Table of Contents
 
-* **Text-to-Speech Conversion:** Convert written text into spoken audio using the `pyttsx3` library.
-* **Customizable Voice Options:**
-    * Choose between male or female voices for a personalized experience.
-    * Adjust the speech speed (fast, medium, or slow) for better comprehension.
-* **Intuitive Graphical User Interface (GUI):** Built with `tkinter`, the interface allows users to easily interact with the application.
-* **Versatile Output Options:**
-    * Play the generated audio directly through your computer speakers.
-    * Save the speech as an MP3 file for future use or sharing. 
+- [Overview](#overview)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Installation and Setup](#installation-and-setup)
+- [Usage](#usage)
+- [Project Structure](#project-structure)
+- [Contributing](#contributing)
+- [Authors and Acknowledgements](#authors-and-acknowledgements)
 
-**Benefits:**
+## Overview
 
-* **Accessibility:** This application is a valuable tool for users with visual impairments or reading difficulties.
-* **Improved Productivity:** Convert text-based documents or articles into audio for hands-free consumption while multitasking.
-* **Enhanced Learning:**  Listen back to written material to reinforce information retention.
-* **Entertainment:**  Bring written content to life with expressive speech output.
+The **Text-To-Speech Application** provides an efficient and customizable way to **convert text into speech** using Python. It enhances accessibility for users by offering **voice gender options**, **adjustable speed**, and **MP3 file export**. The GUI ensures ease of use, making text-to-speech functionality accessible to everyone.
 
-**Project Dependencies:**
+## Features
 
-* Python 3 (tested with specific version, if applicable)
-* pyttsx3 library
-* Tkinter library
+- **Text-to-Speech Conversion**: Converts text input into speech.
+- **Voice Gender Selection**: Choose between **Male** or **Female** voices.
+- **Speech Speed Adjustment**: Options for **Slow, Normal, and Fast** speech.
+- **Audio Playback**: Play the generated speech directly from the application.
+- **MP3 File Saving**: Save the speech output as an **MP3 file** for later use.
+- **User-Friendly GUI**: Simple and intuitive interface using `tkinter`.
 
-**Getting Started:**
+## Technologies Used
 
-1. Ensure you have Python 3 and the required libraries installed. You can install them using `pip`:
-   ```bash
-   pip install pyttsx3 tkinter
-   ```
-2. Clone or download this project repository.
-3. Open a terminal window and navigate to the project directory.
-4. Run the application using:
-   ```bash
-   python main.py
-   ```
+- **Programming Language**: Python (3.x)
+- **Libraries**:
+  - `pyttsx3` – Text-to-Speech conversion
+  - `tkinter` – Graphical User Interface (GUI)
+  - `os` – File handling for saving MP3 files
 
-**Literature Review:**
+## Installation and Setup
 
-This project includes a review of five relevant research papers that highlight the importance of user interaction and customization in Text-to-Speech applications. These studies demonstrate the effectiveness of Python-based solutions in catering to user preferences. The research emphasizes the need for user-friendly GUIs and flexible output options, reflecting the demand for efficient and personalized text-to-speech tools.
+### 1. Clone the Repository
+```bash
+git clone https://github.com/yourusername/TextToSpeech.git
+cd TextToSpeech
+```
 
-**Further Development:**
+### 2. Install Dependencies
+Ensure you have **Python 3.x** installed, then install the required libraries:
+```bash
+pip install pyttsx3
+```
 
-* Implement additional voice customization options (accent, pitch)
-* Integrate support for multiple languages
-* Explore advanced text processing features for improved pronunciation and clarity.
+### 3. Run the Application
+```bash
+python main.py
+```
 
-This application offers a solid foundation for a user-friendly Text-to-Speech experience. Feel free to explore the code and contribute to further development!
+## Usage
+
+1. **Launch the application** by running `main.py`.
+2. **Enter or paste the text** in the provided input box.
+3. **Choose voice gender** (Male/Female).
+4. **Adjust speech speed** (Slow, Normal, Fast).
+5. **Click "Speak"** to play the audio.
+6. **Click "Save"** to export the audio as an MP3 file.
+
+## Project Structure
+
+```
+TextToSpeech/
+├── src/                   # Main source code
+│   ├── main.py            # Main application script
+│   ├── tts_engine.py      # Handles text-to-speech processing
+│   ├── gui.py             # GUI implementation using tkinter
+│   ├── file_manager.py    # Manages file saving and directory handling
+├── assets/                # Icons, images, and UI assets
+│   ├── speaker_logo.png
+│   ├── speak.png
+│   ├── download.png
+├── requirements.txt       # List of required dependencies
+├── README.md              # This file
+├── LICENSE                # License file
+└── .gitignore             # Files to ignore in Git
+```
+
+## Contributing
+
+Contributions are welcome! If you have ideas for improvements or new features:
+1. Fork the repository.
+2. Create a new branch (`feature-improvement`).
+3. Make changes and test them.
+4. Submit a pull request.
+
+## Authors and Acknowledgements
+
+- **Avjot Singh Chawla** – RA2211003010584
+- **Harsh Jaiswal** – RA2211003010580
+- **Abhishek Singh** – RA2211003010543
+- **Project Supervisor:** Dr. R. Thamizhamuthu  
+  *Department of Computing Technologies, SRM Institute of Science and Technology*
