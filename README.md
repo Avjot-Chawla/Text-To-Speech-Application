@@ -25,6 +25,7 @@ The **Text-To-Speech Application** provides an efficient and customizable way to
 - **Audio Playback**: Play the generated speech directly from the application.
 - **MP3 File Saving**: Save the speech output as an **MP3 file** for later use.
 - **User-Friendly GUI**: Simple and intuitive interface using `tkinter`.
+- **Browse File**: Browse text files from the device.
 
 ## Technologies Used
 
